@@ -1,0 +1,151 @@
+body {
+  background-image: url('../IMG/Proyecto\ nuevo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: white;
+  font-family: 'Anton', sans-serif;
+  font-size: 2.5vw;
+}
+
+h1 span {
+  font-size: 7vw;
+  line-height: 1;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h1 span:nth-child(2) {
+  display: none;
+}
+
+h1:hover span:nth-child(1) {
+  display: none;
+}
+
+h1:hover span:nth-child(2) {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.animacion-de-texto {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: aparecerDesdeDerecha 1s ease-out;
+}
+
+@keyframes aparecerDesdeDerecha {
+  from {
+    transform: translateX(10%); 
+  }
+  to {
+    transform: translateX(0); 
+  }
+}
+.caja_inicio {
+  margin-left: 10vw;
+  margin-top: 10vw;
+  flex-direction: column;
+}
+
+.mensajeOculto {
+  border-bottom: 1px solid white;
+}
+.boton-container {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start; 
+}
+
+.boton {
+  height: 10vh;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: width 0.3s;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.flappybird-btn {
+  width: 3vw;
+  border-radius: 0 50vw 50vw 0;
+  background-color: #a2a2a2;
+}
+
+.flappybird-btn:hover {
+  width: 11vh;
+  background-color: #4be797;
+}
+
+.traductor-btn {
+  width: 2vw;
+  border-radius: 0 50vw 50vw 0;
+  background-color: #888888;
+}
+
+.traductor-btn:hover {
+  width: 4vw;
+  background-color: #74c0f3;
+}
+
+.imgboton {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.seccion {
+  display: none;
+  width: 30vw;
+  height: auto;
+}
+#sobreMi{
+  width: 25%;
+}
+.seccion-activa {
+  display: block;
+  margin: 10%;
+}
+
+.volver-btn {
+  position: absolute;
+  top: 10px;
+  right: 55%;
+  cursor: pointer;
+}
+
+.fuente-proyecto:hover {
+  color: rgb(238, 87, 84);
+}
+
+.contenedorFormulario {
+  width: 20vw;
+}
+
+form {
+  display: grid;
+}
+
+.Enviar {
+  background-color: #adaeae;
+  color: #fff;
+  padding: 1vw 1.5vw;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.6vw;
+}
+
+.Enviar:hover {
+  background-color: #5e0000;
+}
+
+#joke{
+  color: white;
+}
