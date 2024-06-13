@@ -25,54 +25,32 @@
         <h1>
 
             <span id="sobreMiBtn" style="color: #8d8d8d;">Hola</span>
-            <span class="mensajeOculto animacion-de-texto" style="color: #a4a4a4;">Sobre mi</span>
+            <span class="mensajeOculto animacion-de-texto" >Sobre mi</span>
 
         </h1>
 
         <h1>
 
-            <span id="proyectosBtn" style="color: #b6b6b6;">Soy</span>
-            <span class="mensajeOculto animacion-de-texto" style="color: #b6b6b6;">Proyectos</span>
+            <span id="proyectosBtn" style="color: #8d8d8d;">Soy</span>
+            <span class="mensajeOculto animacion-de-texto" >Proyectos</span>
 
         </h1>
 
         <h1>
 
-            <span id="contactoBtn" style="color: #a4a4a4;">Tom</span>
-            <span class="mensajeOculto animacion-de-texto">Contacto</span>
-
+            <span id="contactoBtn" style="color: #8d8d8d;">Tom</span>
+            <span class="mensajeOculto animacion-de-texto" >Contacto</span>
         </h1>
-        <h6 id="joke">Cargando chiste...</h6>
-    </div>
-
-    <script>
-        function fetchChuckNorrisJoke() {
-            // Realizar la solicitud a la API
-            fetch('https://api.chucknorris.io/jokes/random')
-                .then(response => response.json())
-                .then(data => {
-                    // Actualizar el contenido del elemento H1
-                    document.getElementById('joke').innerText = data.value;
-                })
-                .catch(error => {
-                    console.error('Error:', error);
-                });
-        }
-
-        // Realizar la primera solicitud al cargar la página
-        fetchChuckNorrisJoke();
-
-        // Actualizar cada 20 segundos
-        setInterval(fetchChuckNorrisJoke, 5000);
-    </script>
-
+        </div>
 
     <!-- ABOUT / SOBRE MI -->
 
-
     <div id="sobreMi" class="seccion">
         <h2>Sobre mi</h2>
-        <p>¡Hola! Soy Tomás. Soy una persona multi-talentosa y estoy comenzando como desarrollador. Soy estudiante en la Universidad Tecnológica Nacional, estudiando tecnicatura en programacion. Me gradué en 2022 de la Escuela Técnica Número cuatro como Técnico en Procesos Químicos. Prefiero no definirme por el trabajo que hago actualmente, sino por el trabajo que aspiro a hacer. Las habilidades se pueden enseñar Prefiero seguir aprendiendo, desafiarme a mí mismo y crear experiencias laborales significativas y atractivas.</p>
+        <p>¡Hola! Soy Tomás. Soy una persona autodidacta con fuertes habilidades en comunicación y resolución de problemas.
+Actualmente me estoy especializando en el desarrollo móvil, aunque estoy siempre dispuesto a
+aprender y adaptarme a nuevas áreas de trabajo y tecnologías. Busco oportunidades para crecer y
+expandir mis conocimientos</p>
         <h3 class="volver-btn" onclick="volverAlInicio()">X</h3>
     </div>
 
@@ -109,18 +87,14 @@
             </form>
         </div>
         <h3 class="volver-btn" onclick="volverAlInicio()">X</h3>
-    </div>
+    </div>  
 
     <!-- BOTONES MARGEN IZQUIERDO -->
 
-    <div class="contenedorboton boton-container">
-        <button class="flappybird-btn boton" onclick="abrirPopupFlappyBird()">
-            <img class="imgboton" src="./assets/IMG/pngegg(3).png" alt="">
-        </button>
         <script src="./assets/JS/btn-traductor.js"></script>
-        <button id="cambiarIdiomaBtn" onclick="cambiarIdioma()" class="traductor-btn boton"><img class="imgboton"
-                src="./assets/IMG/traductor.png" alt=""></button>
-    </div>
+        <button id="cambiarIdiomaBtn" onclick="cambiarIdioma()" class="traductor-btn boton">
+            <img class="imgboton" src="./assets/IMG/traductor.png" alt="">
+        </button>
     <script src="./assets/JS/Home.js"></script>
 </body>
 
