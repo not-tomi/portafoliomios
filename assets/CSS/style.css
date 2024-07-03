@@ -55,28 +55,47 @@ body::after {
   flex-direction: column;
 }
 
-.ElementNoHover{
-  color: #8d8d8d;
+h1 span {
+  font-size: 7vw;
+  line-height: 1;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-.ElementHover{
-  border-bottom: 1px solid white;
+h1 span:nth-child(2) {
+  display: none;
+}
+h1 span:nth-child(1) {
+  color: #888888;
+  border-bottom: 1px solid #888888;
+}
+
+h1:hover span:nth-child(1) {
+  color: #888888;
+  display: none;
+}
+
+h1:hover span:nth-child(2) {
+  display: inline-block;
+  cursor: pointer;
 }
 
 .animacion-de-texto {
   overflow: hidden;
   white-space: nowrap;
   animation: AparecerDesdeDerecha 1s ease-out;
+  display: inline-block; /* Asegúrate de que el elemento tenga un display adecuado */
 }
 
 @keyframes AparecerDesdeDerecha {
   from {
-    transform: translateX(10%); 
+    transform: translateX(10%);
   }
   to {
-    transform: translateX(0); 
+    transform: translateX(0);
   }
 }
+
 
 
 
