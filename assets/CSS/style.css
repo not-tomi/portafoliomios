@@ -96,37 +96,23 @@ h1:hover span:nth-child(2) {
   }
 }
 
-
-
-
-.traductor-btn {
+/* Estilo básico para el menú desplegable */
+.language-selector {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   position: fixed;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 2rem;
-  height: 2rem;
-  border-radius: 0 5rem 5rem 0;
-  background-color: #888888;
+  width: 3vw;
+  padding: 1vw;
+  top: 2vw;
+  left: 2vw;
+  background-color:transparent;
+  z-index: 1000; 
+  padding: .1vw;
+  font-size: 2vw;
   cursor: pointer;
-  border: none;
-  outline: none;
-  transition: width 0.3s, background-color 0.3s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.traductor-btn:hover {
-  width:3rem;
-  background-color: #74c0f3;
-}
-
-.imgboton{
-  width: 2rem; /* Ajusta el ancho para que la imagen se adapte dentro del botón */
-  height: 2rem; /* Ajusta la altura para que la imagen mantenga su proporción */
-  max-width: 80%;
-  max-height: 80%;
+  color: white;
+  border: 0;
 }
 
 
