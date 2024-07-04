@@ -14,6 +14,7 @@ const traducciones = {
     "Contact": "Contacto",
     "Nombre:": "Name:",
     "Email:": "Email:",
+    "Volver": "Return",
     "Mensaje:": "Message:",
     "Enviar": "Send",
     "Send:": "Enviar:",
@@ -26,7 +27,7 @@ const traducciones = {
 
 // CREAMOS LA FUNCIÓN PARA CAMBIAR EL IDIOMA
 function cambiarIdioma() {
-    const elementos = document.querySelectorAll(".hache1, h1 span, h2, p, span, label, .Enviar");
+    const elementos = document.querySelectorAll(".hache1, h1 span, h2, p, span, label, .Enviar, button");
 
     // Recorrer todos los elementos del documento HTML
     elementos.forEach((elemento) => {
