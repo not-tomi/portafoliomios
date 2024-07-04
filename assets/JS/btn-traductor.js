@@ -1,8 +1,6 @@
 let idiomaActual = "es"; // Variable para almacenar el idioma actual
 
 // CREAMOS EL OBJETO TRADUCCIONES
-
-
 const traducciones = {
     "Hola": "Hello",
     "Hello": "Hola",
@@ -28,29 +26,30 @@ const traducciones = {
 
 // CREAMOS LA FUNCIÓN PARA CAMBIAR EL IDIOMA
 function cambiarIdioma() {
-  const elementos = document.querySelectorAll(".hache1 , h1 span, h2, p, span, label, .Enviar");
+    const elementos = document.querySelectorAll(".hache1, h1 span, h2, p, span, label, .Enviar");
 
-  // Recorrer todos los elementos del documento HTML
-  elementos.forEach((elemento) => {
-    // Obtener el texto del elemento
-    const textoOriginal = elemento.textContent.trim();
-    // Obtener el texto traducido
-    const nuevoTexto = traducciones[textoOriginal] || textoOriginal;
-    // Cambiar el texto del elemento
-    elemento.textContent = nuevoTexto;
-  });
+    // Recorrer todos los elementos del documento HTML
+    elementos.forEach((elemento) => {
+        // Obtener el texto del elemento
+        const textoOriginal = elemento.textContent.trim();
+        // Obtener el texto traducido
+        const nuevoTexto = traducciones[textoOriginal] || textoOriginal;
+        // Cambiar el texto del elemento
+        elemento.textContent = nuevoTexto;
+    });
 
-  // Cambiar el idioma actual después de traducir
-  idiomaActual = idiomaActual === "es" ? "en" : "es";
+    // Cambiar el idioma actual después de traducir
+    idiomaActual = idiomaActual === "es" ? "en" : "es";
 }
 
 // Llamar a la función cambiarIdioma() al iniciar y después de cada traducción
 function inicializarIdioma() {
-  if (idiomaActual === "en") {
-    cambiarIdioma();
-  }
+    const selector = document.getElementById('idioma');
+    selector.value = idiomaActual;  // Establecer el valor del selector de idioma
+    if (idiomaActual === "en") {
+        cambiarIdioma();
+    }
+    selector.addEventListener('change', cambiarIdioma);
 }
 
 window.onload = inicializarIdioma;
-const btnTraductor = document.getElementById("cambiarIdiomaBtn");
-btnTraductor.addEventListener("click", cambiarIdioma);

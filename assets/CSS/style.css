@@ -96,26 +96,6 @@ h1:hover span:nth-child(2) {
   }
 }
 
-/* Estilo básico para el menú desplegable */
-.language-selector {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  position: fixed;
-  width: 3vw;
-  padding: 1vw;
-  top: 2vw;
-  left: 2vw;
-  background-color:transparent;
-  z-index: 1000; 
-  padding: .1vw;
-  font-size: 2vw;
-  cursor: pointer;
-  color: white;
-  border: 0;
-}
-
-
 .volver-btn {
   position: absolute;
   top: 10px;
