@@ -99,6 +99,9 @@ h1:hover span:nth-child(2) {
 .seccion{
   display: none;
 }
+.seccion-activa{
+  display: block;
+}
 .volver-btn {
   position: absolute;
   top: 10px;
