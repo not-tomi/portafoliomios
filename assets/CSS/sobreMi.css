@@ -1,5 +1,37 @@
-#sobreMi{
-width: 20vw;
-position: fixed;
-left: 7vw;
+#aboutCard {
+    width: 38vw;
+    position: fixed;
+    left: 8vw;
+    top: 3vw;
+    background-color: rgba(144, 144, 144, 0.265);
+    padding: 1vw;
+    padding-top: 0;
+    border-radius: 1vh;
+    align-items: center;
+}
+#titleAbout {
+    font-size: 3vw;
+    color: #868686;
+    margin-bottom: 0.5vw
+        /* color: bisque; */
+}
+#aboutText {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5vw;
+    color: #f2f2f2;
+    line-height: 1.6;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+}
+#experienceCard{
+    position: absolute;
+    width: 38vw;
+    right: 9vw;
+    top: 3vw;
+    background-color: rgba(144, 144, 144, 0.265);
+    padding: 1vw;
+    padding-top: 0;
+    border-radius: 1vh;
 }
