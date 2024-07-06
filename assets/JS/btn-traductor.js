@@ -15,6 +15,7 @@ const traducciones = {
     "Nombre:": "Name:",
     "Email:": "Email:",
     "Volver": "Return",
+    "Return": "Volver",
     "Mensaje:": "Message:",
     "Enviar": "Send",
     "Send:": "Enviar:",
