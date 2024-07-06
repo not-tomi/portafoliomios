@@ -103,10 +103,11 @@ h1:hover span:nth-child(2) {
   display: block;
 }
 .volver-btn {
-  position: absolute;
-  top: 10px;
-  right: 55%;
+  position: fixed;
+  top: .7vh;
   cursor: pointer;
+  right: 6vw;
+  font-size: 2vw;
 }
 
 .Enviar {
