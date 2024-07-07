@@ -1,0 +1,31 @@
+.formContainer{
+    font-size: 2vw;
+    width: 38vw;
+    position: fixed;
+    left: 30vw;
+    top: 6vw;
+    background-color: rgba(144, 144, 144, 0.265);
+    padding: 1vw;
+    padding-top: 0;
+    border-radius: 1vh;
+    overflow: hidden;
+}
+.formChildren{
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en una columna */
+}
+.Enviar {
+    background-color: #adaeae;
+    color: #fff;
+    padding: 1vw 1.5vw;
+    border: none;
+    border-radius: 1vw;
+    cursor: pointer;
+    font-size: 1.6vw;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.Enviar:hover {
+    background-color: #5e0000;
+}
