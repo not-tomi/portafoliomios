@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+
+:root {
+    --primary: #865DFF
+    ;
+}
+
+
+.steps {
+    max-width: 35vw;
+    margin: 0 auto;
+}
+
+.step {
+    display: flex;
+    position: relative;
+    margin-bottom: 0;
+}
+
+.step:after {
+    content: "";
+    position: absolute;
+    left: 1.1vw;
+    top:2.5vw;
+    height: 25vh;
+    width: .2vw;
+    background-color: var(--primary);
+}
+
+.step:not(:last-child):after {
+    height: 13vh;
+}
+
+.info {
+    margin: 1vw;
+}
+
+.title {
+    font-size: 2vw;
+    font-weight: 600;
+    margin: 0vw;
+    color: white;
+}
+
+.text {
+    font-size: 1vw;
+    color: rgba(255, 255, 255, 0.7);
+    padding-bottom: 0;
+    margin: 0;
+}
+
+.number {
+    width: 2vw;
+    height: 2vw;
+    background-color: transparent;
+    border-radius: 2vw;
+    border: .2vw solid var(--primary);
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1vw;
+    font-weight: 600;
+    margin-right:.8vw;
+}
+
+.container{
+    font-family: "Open Sans", sans-serif;
+    width: auto;
+    position: absolute;
+    right: 12vw;
+    top: 3vw;
+    padding: 1vw;
+    padding-top: 0;
+    border-radius: 1vh;
+}

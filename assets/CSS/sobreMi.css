@@ -25,50 +25,8 @@
     color: #f2f2f2;
     line-height: 1.6;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-    text-align: justify;
+    text-align: left;
 }
 
 
-.containerLineTime {
-    position: absolute;
-    top: 3vw;
-    right: 46vw;
-}
 
-.lineTime {
-    position: absolute;
-    width: 0.3vw;
-    height: 80vh;
-    background-color: rgb(255, 255, 255);
-    z-index: 99;
-    border-radius: 1vh;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.dot {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 1vw;
-    height: 2.1vh;
-    background-color: white;
-    border: 0.15vw solid black;
-    border-radius: 50%;
-}
-
-.dot:nth-child(1) {
-    top: 5vh;
-}
-
-.dot:nth-child(2) {
-    top: 20vh;
-}
-
-.dot:nth-child(3) {
-    top: 35vh;
-}
-
-.dot:nth-child(4) {
-    top: 50vh;
-}

@@ -1,138 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
-
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/CSS/style.css">
-    <link rel="stylesheet" href="assets/CSS/customDropdown.css">
-    <link rel="stylesheet" href="assets/CSS/buttomSecret.css">
-    <link rel="stylesheet" href="assets/CSS/sobreMi.css">
-    <link rel="stylesheet" href="assets/CSS/form.css">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/557bcf2f80.js" crossorigin="anonymous"></script>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/CSS/style.css" />
+    <link rel="stylesheet" href="assets/CSS/customDropdown.css" />
+    <link rel="stylesheet" href="assets/CSS/buttomSecret.css" />
+    <link rel="stylesheet" href="assets/CSS/sobreMi.css" />
+    <link rel="stylesheet" href="assets/CSS/form.css" />
+    <link rel="stylesheet" href="assets/CSS/timeLine.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/557bcf2f80.js"
+      crossorigin="anonymous"
+    ></script>
 
     <title>Tomás Peruilh</title>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div class="content-background">
-    <!-- BOTONES MARGEN IZQUIERDO -->
-                <select class="language-selector" id="idioma" name="idioma">
-                    <option value="es">🇪🇸</option>
-                    <option value="en">🇺🇸</option>
-                <!-- Agrega más opciones según tus necesidades -->
-            </select>
+      <!-- BOTONES MARGEN IZQUIERDO -->
+      <select class="language-selector" id="idioma" name="idioma">
+        <option value="es">🇪🇸</option>
+        <option value="en">🇺🇸</option>
+        <!-- Agrega más opciones según tus necesidades -->
+      </select>
 
-    <script src="./assets/JS/Home.js"></script>
+      <script src="./assets/JS/Home.js"></script>
 
-<!-- Texto Del Inicio -->
-    <div class="caja_inicio">
-
+      <!-- Texto Del Inicio -->
+      <div class="caja_inicio">
         <h1>
-
-            <span id="sobreMiBtn" class=""  >Hola</span>
-            <span class="animacion-de-texto" >Sobre mi</span>
-
+          <span id="sobreMiBtn" class="">Hola</span>
+          <span class="animacion-de-texto">Sobre mi</span>
         </h1>
 
         <h1>
-
-            <span id="proyectosBtn" class="" >Soy</span>
-            <span class="animacion-de-texto" >Proyectos</span>
-
+          <span id="proyectosBtn" class="">Soy</span>
+          <span class="animacion-de-texto">Proyectos</span>
         </h1>
 
         <h1>
-
-            <span id="contactoBtn" class="">Tom</span>
-            <span class="animacion-de-texto" >Contacto</span>
-
+          <span id="contactoBtn" class="">Tom</span>
+          <span class="animacion-de-texto">Contacto</span>
         </h1>
+      </div>
 
-    </div>
+      <!-- ABOUT / SOBRE MI -->
 
-    <!-- ABOUT / SOBRE MI -->
-
-    <div id="sobreMi" class="seccion">
+      <div id="sobreMi" class="seccion">
         <div id="aboutCard">
-            <h2 id="titleAbout">Sobre mi</h2>
-            <p id="aboutText">
-                Me llamo Tomás, mis amigos me dicen Tom, no tendré amigos muy creativos pero yo trato de serlo
-                y mejorarlo día a día.
-                <br>
-                Me gusta enseñar, doy clases particulares de matemática, química y programación a ingresantes
-                de carreras universitarias y nivel secundario. 
-                <br>
-                Soy una persona emprendedora y autodidacta. Actualmente me estoy especializando en el
-                desarrollo Backend, aunque estoy siempre dispuesto a aprender
-                y adaptarme a nuevas áreas de trabajo y tecnologías.
-            </p>
+          <h2 id="titleAbout">Sobre mi</h2>
+          <p id="aboutText">
+            Me llamo Tomás, mis amigos me dicen Tom, no tendré amigos muy
+            creativos pero yo trato de serlo y mejorarlo día a día.
+            <br />
+            Me gusta enseñar, doy clases particulares de matemática, química y
+            programación a ingresantes de carreras universitarias y nivel
+            secundario.
+            <br />
+            Soy una persona emprendedora y autodidacta. Actualmente me estoy
+            especializando en el desarrollo Backend, aunque estoy siempre
+            dispuesto a aprender y adaptarme a nuevas áreas de trabajo y
+            tecnologías.
+          </p>
         </div>
 
-            <!-- Experiencia -->
-    
-            <div class="containerLineTime">
-                <div class="lineTime">
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div>
+        <!-- Experiencia -->
+        <div class="container">
+
+            <div class="wrapper">
+                <div class="steps" id="steps">
+                    
                 </div>
             </div>
-
+            <script src="assets/JS/timeLineObjet.js"></script>
+        </div>
 
         <h3 class="volver-btn" onclick="volverAlInicio()">X</h3>
-    </div>
+      </div>
 
-    <!-- PROYECTOS -->
+      <!-- PROYECTOS -->
 
-    <div id="proyectos" class="seccion">
-        <h2 style="color: red;">Proyectos</h2>
+      <div id="proyectos" class="seccion">
+        <h2 style="color: red">Proyectos</h2>
         <h1 class="fuente-proyecto">Ardep</h1>
         <h1 class="fuente-proyecto">Chango Facil</h1>
         <h3 class="volver-btn" onclick="volverAlInicio()">X</h3>
-    </div>
+      </div>
 
-    <!-- CONTACTO -->
+      <!-- CONTACTO -->
 
-    <div id="contacto" class="seccion">
+      <div id="contacto" class="seccion">
         <div class="formContainer">
-            <h1>Contacto</h1>
-            <div class="redes-sociales">
-                <a href="" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="" target="_blank"><i class="fab fa-github"></i></a>
-                <a href=""><i class="far fa-envelope"></i></a>
-            </div>
-            <form class="formChildren" action="php/subscripcion_usuario.php" method="post">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="Nombre" required>
+          <h1>Contacto</h1>
+          <div class="redes-sociales">
+            <a href="" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="" target="_blank"><i class="fab fa-github"></i></a>
+            <a href=""><i class="far fa-envelope"></i></a>
+          </div>
+          <form
+            class="formChildren"
+            action="php/subscripcion_usuario.php"
+            method="post"
+          >
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="Nombre" required />
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="Email" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="Email" required />
 
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="Texto" rows="4" required></textarea>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="Texto" rows="4" required></textarea>
 
-                <button class="Enviar">Enviar</button>
-            </form>
+            <button class="Enviar">Enviar</button>
+          </form>
         </div>
         <h3 class="volver-btn" onclick="volverAlInicio()">X</h3>
-    </div>  
-    <script src="./assets/JS/popupfb.js"></script>
-    <script src="./assets/JS/btn-traductor.js"></script>
-    <button onclick="topFunction()" id="topBtn" title="Go to top">Volver</button>
-    <script src="assets/JS/scrollFuntion.js"></script>
-</div>
-</body>
-
-
+      </div>
+      <script src="./assets/JS/popupfb.js"></script>
+      <script src="./assets/JS/btn-traductor.js"></script>
+      <button onclick="topFunction()" id="topBtn" title="Go to top">
+        Volver
+      </button>
+      <script src="assets/JS/scrollFuntion.js"></script>
+    </div>
+  </body>
 </html>
