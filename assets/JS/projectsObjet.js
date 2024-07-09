@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             imageUrl: "./assets/IMG/project1.jpg",
             title: "Proyecto 1",
-            description: "Breve descripción del Proyecto 1.",
+            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lore",
             technologies: ["HTML", "CSS", "JavaScript"]
         },
         {
@@ -12,6 +12,12 @@ document.addEventListener('DOMContentLoaded', function () {
             title: "Proyecto 2",
             description: "Breve descripción del Proyecto 2.",
             technologies: ["HTML", "CSS", "JavaScript"]
+        },
+        {
+            imageUrl: "./assets/IMG/project1.jpg",
+            title: "Proyecto 3",
+            description: "Breve descripción del Proyecto 3.",
+            technologies: ["HTML", "CSS", "JavaScript", "React"]
         }
     ];
 
