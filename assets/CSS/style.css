@@ -7,7 +7,8 @@ body, html {
   padding: 0;
   height: 100%;
   width: 100%;
-  background-color: black;
+  background-color: #191825
+  ;
   position: relative; /* Necesario para los pseudoelementos */
 }
 
@@ -35,7 +36,8 @@ body::after {
   width: 1000px;
   margin: 0 auto; /* Centra el círculo horizontalmente */
   border-radius: 50%;
-  background: radial-gradient(circle 400px at 50% 300px, #fbfbfb36, #000);
+  background: radial-gradient(circle 400px at 50% 300px, #fbfbfb36, #1f1d2d73
+  );
   z-index: 0; /* Coloca el círculo debajo de todo */
 }
 
@@ -44,7 +46,7 @@ body::after {
   position: relative;
   z-index: 2; /* Asegura que el contenido esté encima del fondo */
   padding: 20px;
-  color: white; /* Ejemplo de estilo adicional */
+  color: rgb(109, 109, 109); /* Ejemplo de estilo adicional */
 }
 
 .caja_inicio {

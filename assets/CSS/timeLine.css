@@ -22,13 +22,13 @@
     position: absolute;
     left: 1.1vw;
     top:2.5vw;
-    height: 25vh;
+    height: 10vw;
     width: .2vw;
     background-color: var(--primary);
 }
 
 .step:not(:last-child):after {
-    height: 13vh;
+    height: 7vw;
 }
 
 .info {
@@ -39,7 +39,8 @@
     font-size: 2vw;
     font-weight: 600;
     margin: 0vw;
-    color: white;
+    color: var(--primary)
+    ;
 }
 
 .text {
