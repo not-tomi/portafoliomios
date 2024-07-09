@@ -100,57 +100,61 @@
 
       <!-- CONTACTO -->
 
-      <div id="contacto" class="seccion">
-        <div class="formContainer">
-          <h1>Contacto</h1>
-          <div class="redes-sociales">
-            <a href="" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="" target="_blank"><i class="fab fa-github"></i></a>
-            <a href=""><i class="far fa-envelope"></i></a>
-          </div>
-          <div class="custom-form-container">
-            <div class="card">
-              <h2>Contact Us</h2>
-              <div class="row">
-                <div class="col">
-                  <div class="form-group">
-                    <label>First Name</label>
-                    <input type="text" />
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="form-group">
-                    <label>Surname</label>
-                    <input type="text" />
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="form-group">
-                    <label>Email</label>
-                    <input type="text" />
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="form-group">
-                    <label>Phone</label>
-                    <input type="text" />
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="form-group">
-                    <label>Message</label>
-                    <textarea></textarea>
-                  </div>
-                </div>
-                <div class="col">
-                  <input type="submit" value="Submit" />
-                </div>
-              </div>
+    <div id="contacto" class="seccion formContainer">
+
+        <div class="redes-sociales-container">
+            <h1>Contacto</h1>
+            <div class="redes-sociales">
+                <a href="" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="" target="_blank"><i class="fab fa-github"></i></a>
+                <a href=""><i class="far fa-envelope"></i></a>
             </div>
-          </div>
         </div>
-        <h3 class="volver-btn" onclick="volverAlInicio()">X</h3>
-      </div>
+        
+            <div class="custom-form-container">
+                <div class="card">
+                    <h2>Contact Us</h2>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" name="firstName" required />
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="surname">Surname</label>
+                                <input type="text" id="surname" name="surname" required />
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required />
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="tel" id="phone" name="phone" required />
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <input type="text" id="message" name="message" required />
+                            </div>
+                        </div>
+                        <div class="col">
+                            <input type="submit" value="Submit" />
+                        </div>
+                    </div>
+                </div>
+        
+            <h3 class="volver-btn" onclick="volverAlInicio()">X</h3>
+        </div>
+
+
       <script src="./assets/JS/popupfb.js"></script>
       <script src="./assets/JS/btn-traductor.js"></script>
       <button onclick="topFunction()" id="topBtn" title="Go to top">

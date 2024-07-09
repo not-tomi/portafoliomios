@@ -1,97 +1,119 @@
-
-.formContainer{
-    font-size: 2vw;
-    width: 50vw;
-    height: 43vw;
-    position: fixed;
-    left: 22vw;
-    background-color: #865dff62;
-    padding: 3vw;
-    padding-top: 0;
-    border-radius: 1vh;
-    overflow: hidden;
+.formContainer {
+  position: fixed;
+  left: 22vw;
+  top: 4vw;
+  width: 50vw;
+  height: 35vw;
+  font-size: 1.5vw;
+  background-color: #865dff62;
+  padding: 5vw;
+  padding-top: 1vw;
+  border-radius: 2vw;
+  overflow: hidden;
 }
 
-  .custom-form-container .card {
-    width: 93%;
-    padding: 1vw;
-    border: .6vw solid rgba(0, 0, 0, 0.3);
-    box-shadow: .8vw 1vw 0 rgba(0, 0, 0, 0.3);
-    border-radius: 50px;
-  }
-  
-  .custom-form-container .card h2 {
-    color: rgba(0, 0, 0, 0.3);
-    font-size: 1.5vw;
-    text-transform: uppercase;
-  }
-  
-  .custom-form-container .card .row {
-    position: relative;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
-    grid-gap: 1.2vw;
-  }
-  
-  .custom-form-container .card .row .col {
-    width: 90%;
-    margin:2vw;
-    transition: 0.5s;
-  }
-  
-  .custom-form-container .card .row .form-group {
-    position: relative;
-    width: 100%;
-    height: 2vw;
-  }
-  
-  .custom-form-container .card .row .form-group input,
-  .custom-form-container .card .row .form-group textarea {
-    position: absolute;
-    width: 90%;
-    height: 100%;
-    background: transparent;
-    outline: none;
-    font-size: 1.3vw;
-    padding: .3vw;
-    border: .2vw solid rgba(0, 0, 0, 0.3);
-    box-shadow: .6vw .6vw 0 rgba(0, 0, 0, 0.3);
-    border-radius: 2vw;
-  }
-  
-  .custom-form-container .card .row .form-group label {
-    line-height: 2vw;
-    color: #FFEDD8;
-    font-size: 1.5vw;
-    margin: 0 0 0 1vw;
-    display: block;
-    pointer-events: none;
-  }
-  
-  .custom-form-container .row .col:nth-child(6) {
-    margin-left: 6vw;
-  }
-  
-  
-  .custom-form-container .card .row input[type="submit"] {
-    border: .5vw solid rgba(0, 0, 0, 0.3);
-    box-shadow: .5vw .5vw 0 rgba(0, 0, 0, 0.3);
-    padding: .3vw;
-    height: 100%;
-    width: 50%;
-    cursor: pointer;
-    outline: none;
-    background: transparent;
-    text-transform: uppercase;
-    color: #ffffff;
-    line-height: 40px;
-    font-size: 1.5vw;
-    font-weight: 700;
-    border-radius: 2vw;
-    transition: all 0.4s;
-  }
-  .redes-sociales{
-    color: red;
-  }
-  
+.redes-sociales-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+
+.redes-sociales {
+  display: flex;
+  gap: 1vw; /* Espacio entre los iconos */
+}
+
+.redes-sociales a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.redes-sociales i {
+  font-size: 2.5vw; /* Ajusta el tamaño de los iconos según sea necesario */
+}
+.card h2{
+  margin: 0;
+}
+.custom-form-container .card {
+  width: 46vw;
+  height: 25vw;
+  padding: 1vw;
+  border: .6vw solid rgba(0, 0, 0, 0.3);
+  box-shadow: .8vw 1vw 0 rgba(0, 0, 0, 0.3);
+  border-radius: 2vw;
+}
+
+.custom-form-container .card h2 {
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 1.5vw;
+  text-transform: uppercase;
+}
+
+.custom-form-container .card .row {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+  grid-gap: 1.2vw;
+}
+
+.custom-form-container .card .row .col {
+  margin: 2vw;
+  transition: 0.5s;
+}
+
+.custom-form-container .card .row .form-group {
+  position: relative;
+  width: 100%;
+  height: 2vw;
+}
+
+.custom-form-container .card .row .form-group input,
+.custom-form-container .card .row .form-group textarea {
+  position: absolute;
+  width: 17vw;
+  height: 2vw;
+  background: transparent;
+  outline: none;
+  font-size: 1.3vw;
+  padding: .3vw;
+  border: .2vw solid rgba(0, 0, 0, 0.3);
+  box-shadow: .6vw .6vw 0 rgba(0, 0, 0, 0.3);
+  border-radius: 2vw;
+}
+
+.custom-form-container .card .row .form-group label {
+  line-height: 2vw;
+  color: #FFEDD8;
+  font-size: 1.5vw;
+  margin-bottom: .3vw;
+  display: block;
+  pointer-events: none;
+}
+
+.custom-form-container .row .col:nth-child(6) {
+  margin-left: 6vw;
+}
+
+.custom-form-container .card .row input[type="submit"] {
+  border: .5vw solid rgba(0, 0, 0, 0.3);
+  box-shadow: .5vw .5vw rgba(0, 0, 0, 0.3);
+  padding: .3vw;
+  width: 10vw;
+  cursor: pointer;
+  outline: none;
+  background: transparent;
+  text-transform: uppercase;
+  color: #ffffff;
+  line-height: 2vw;
+  font-size: 1.5vw;
+  font-weight: 700;
+  border-radius: 2vw;
+  transition: all 0.4s;
+}
+
+.custom-form-container .card .row input[type="submit"]:active {
+  transform: translateY(0.3vw);
+  box-shadow: .3vw .3vw 0 rgba(0, 0, 0, 0.3);
+}
+
