@@ -3,24 +3,24 @@ document.addEventListener('DOMContentLoaded', function () {
     let wizards = [
         {
             complete: false,
-            number: "*",
+            number: "1°",
             title: "Técnico en Procesos Quimicos",
             text:
                 "Me gradué como Técnico Químico en E.E.S.T IV Antártida de Bahía Blanca, donde adquirí sólidos conocimientos sobre análisis en laboratorios, manejo de equipos y procesos productivos a nivel micro e industrial."    
         },
         {
             complete: false,
-            number: "*",
+            number: "2°",
             title: "Técnico Universitario en Programación",
             text:
             "Estoy a algunas materias de terminar la carrera de Técnico Universitario en Programación en la UTN, donde adquirí sólidos conocimientos sobre programación, lenguajes de programación, bases de datos, entre otros."
         },
         {
             complete: false,
-            number: "*",
+            number: "3°",
             title: "Freelancer",
             text:
-                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat pariatur minima nemo? Facilis veniam reprehenderit quaerat aspernatur, quis voluptas voluptate."
+                    "Participe de un proyecto de una aplicacion web para un consultorio médico, donde con ayuda gpt se lograba mas rapido un seguimiendo a los pacientes. Me encargue de optimizar funciones, mejorar aspectos visuales, resolver algunos bugs visuales."
         },
     ];
 
