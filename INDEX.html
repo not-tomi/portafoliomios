@@ -9,8 +9,12 @@
     <link rel="stylesheet" href="assets/CSS/sobreMi.css" />
     <link rel="stylesheet" href="assets/CSS/form.css" />
     <link rel="stylesheet" href="assets/CSS/timeLine.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="assets/CSS/projectObjetsStyle.css">
+    <link rel="stylesheet" href="assets/CSS/contactCard.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/CSS/projectObjetsStyle.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -76,13 +80,10 @@
 
         <!-- Experiencia -->
         <div class="container">
-
-            <div class="wrapper">
-                <div class="steps" id="steps">
-                    
-                </div>
-            </div>
-            <script src="assets/JS/timeLineObjet.js"></script>
+          <div class="wrapper">
+            <div class="steps" id="steps"></div>
+          </div>
+          <script src="assets/JS/timeLineObjet.js"></script>
         </div>
 
         <h3 class="volver-btn" onclick="volverAlInicio()">X</h3>
@@ -91,9 +92,8 @@
       <!-- PROYECTOS -->
 
       <div id="proyectos" class="seccion">
-
-            <div id="projects"></div>
-            <script src="assets/JS/projectsObjet.js"></script>
+        <div id="projects"></div>
+        <script src="assets/JS/projectsObjet.js"></script>
 
         <h3 class="volver-btn" onclick="volverAlInicio()">X</h3>
       </div>
@@ -108,22 +108,46 @@
             <a href="" target="_blank"><i class="fab fa-github"></i></a>
             <a href=""><i class="far fa-envelope"></i></a>
           </div>
-          <form
-            class="formChildren"
-            action="php/subscripcion_usuario.php"
-            method="post"
-          >
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="Nombre" required />
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="Email" required />
-
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="Texto" rows="4" required></textarea>
-
-            <button class="Enviar">Enviar</button>
-          </form>
+          <div class="custom-form-container">
+            <div class="card">
+              <h2>Contact Us</h2>
+              <div class="row">
+                <div class="col">
+                  <div class="form-group">
+                    <label>First Name</label>
+                    <input type="text" />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-group">
+                    <label>Surname</label>
+                    <input type="text" />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-group">
+                    <label>Email</label>
+                    <input type="text" />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-group">
+                    <label>Phone</label>
+                    <input type="text" />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-group">
+                    <label>Message</label>
+                    <textarea></textarea>
+                  </div>
+                </div>
+                <div class="col">
+                  <input type="submit" value="Submit" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <h3 class="volver-btn" onclick="volverAlInicio()">X</h3>
       </div>
