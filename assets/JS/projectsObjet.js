@@ -3,8 +3,8 @@ document.addEventListener('DOMContentLoaded', function () {
     let projectList = [
         {
             imageUrl: "./assets/IMG/project1.jpg",
-            title: "Proyecto 1",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lore",
+            title: "API Translate.",
+            description: "API para traducir texto en vivo mediante gpt, con autoaprendisaje y guarda tus preferencias.",
             technologies: ["HTML", "CSS", "JavaScript"]
         },
         {
@@ -26,11 +26,11 @@ document.addEventListener('DOMContentLoaded', function () {
             return (
                 `<div class='project-card'>` +
                 `<p class='project-title'>${project.title}</p>` +
-                `<img src='${project.imageUrl}' alt='${project.title}' class='project-image'>` +
                 `<div class='project-info'>` +
                 `<p class='project-description'>${project.description}</p>` +
                 `<ul class='technologies-list'>` +
                 project.technologies.map(tech => `<li>${tech}</li>`).join("") +
+                `<img src='${project.imageUrl}' alt='${project.title}' class='project-image'>` +
                 `</ul>` +
                 `</div>` +
                 `</div>`
