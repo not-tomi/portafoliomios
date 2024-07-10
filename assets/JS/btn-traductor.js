@@ -21,21 +21,41 @@ const traducciones = {
     "Send:": "Enviar:",
     "Message:": "Mensaje:",
     "Name:": "Nombre:",
-    "Send": "Enviar",
+    "First Name": "Nombre:",
+    "Surname": "Apellido:",
+    "Email": "Correo electrónico:",
+    "Phone": "Teléfono:",
+    "Message": "Mensaje:",
+    "Submit": "Enviar",
 };
 
 // CREAMOS LA FUNCIÓN PARA CAMBIAR EL IDIOMA
 function cambiarIdioma() {
-    const elementos = document.querySelectorAll("h1, h1 span, h2, p, span, label, .Enviar, button");
+    const elementos = document.querySelectorAll(".caja_inicio h1 span, #titleAbout, #aboutText, .volver-btn, .custom-form-container label, .custom-form-container input[type='submit'], #contacto h1, .redes-sociales a");
 
     // Recorrer todos los elementos del documento HTML
     elementos.forEach((elemento) => {
         // Obtener el texto del elemento
-        const textoOriginal = elemento.textContent.trim();
+        let textoOriginal = elemento.textContent.trim();
+
+        // Manejar el texto según el tipo de elemento
+        if (elemento.tagName === 'INPUT') {
+            textoOriginal = elemento.getAttribute('placeholder').trim();
+        } else if (elemento.tagName === 'A') {
+            textoOriginal = elemento.getAttribute('aria-label').trim();
+        }
+
         // Obtener el texto traducido
         const nuevoTexto = traducciones[textoOriginal] || textoOriginal;
+
         // Cambiar el texto del elemento
-        elemento.textContent = nuevoTexto;
+        if (elemento.tagName === 'A') {
+            elemento.setAttribute('aria-label', nuevoTexto);
+        } else if (elemento.tagName === 'INPUT') {
+            elemento.setAttribute('placeholder', nuevoTexto);
+        } else {
+            elemento.textContent = nuevoTexto;
+        }
     });
 
     // Cambiar el idioma actual después de traducir
