@@ -1,166 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/CSS/style.css" />
-    <link rel="stylesheet" href="assets/CSS/customDropdown.css" />
-    <link rel="stylesheet" href="assets/CSS/buttomSecret.css" />
-    <link rel="stylesheet" href="assets/CSS/sobreMi.css" />
-    <link rel="stylesheet" href="assets/CSS/form.css" />
-    <link rel="stylesheet" href="assets/CSS/timeLine.css" />
-    <link rel="stylesheet" href="assets/CSS/contactCard.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/CSS/projectObjetsStyle.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/557bcf2f80.js"
-      crossorigin="anonymous"
-    ></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/CSS/style.css" />
+  <link rel="stylesheet" href="assets/CSS/customDropdown.css" />
+  <link rel="stylesheet" href="assets/CSS/buttomSecret.css" />
+  <link rel="stylesheet" href="assets/CSS/sobreMi.css" />
+  <link rel="stylesheet" href="assets/CSS/form.css" />
+  <link rel="stylesheet" href="assets/CSS/timeLine.css" />
+  <link rel="stylesheet" href="assets/CSS/contactCard.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/CSS/projectObjetsStyle.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/557bcf2f80.js" crossorigin="anonymous"></script>
+  <script src="./assets/JS/Home.js"></script>
 
-    <title>Tomás Peruilh</title>
-  </head>
+  <title>Tomás Peruilh</title>
+</head>
 
-  <body>
-    <div class="content-background">
-      <!-- BOTONES MARGEN IZQUIERDO -->
-      <select class="language-selector" id="idioma" name="idioma">
-        <option value="es">🇪🇸</option>
-        <option value="en">🇺🇸</option>
-        <!-- Agrega más opciones según tus necesidades -->
-      </select>
+<body>
+  <div class="content-background">
+    <!-- BOTONES MARGEN IZQUIERDO -->
+    <select class="language-selector" id="idioma" name="idioma">
+      <option value="es">🇪🇸</option>
+      <option value="en">🇺🇸</option>
+      <!-- Agrega más opciones según tus necesidades -->
+    </select>
 
-      <script src="./assets/JS/Home.js"></script>
+    <!-- Texto Del Inicio -->
+    <div class="caja_inicio">
+      <h1>
+        <span id="sobreMiBtn" class="">Hola</span>
+        <span class="animacion-de-texto">Sobre mi</span>
+      </h1>
 
-      <!-- Texto Del Inicio -->
-      <div class="caja_inicio">
-        <h1>
-          <span id="sobreMiBtn" class="">Hola</span>
-          <span class="animacion-de-texto">Sobre mi</span>
-        </h1>
+      <h1>
+        <span id="proyectosBtn" class="">Soy</span>
+        <span class="animacion-de-texto">Proyectos</span>
+      </h1>
 
-        <h1>
-          <span id="proyectosBtn" class="">Soy</span>
-          <span class="animacion-de-texto">Proyectos</span>
-        </h1>
-
-        <h1>
-          <span id="contactoBtn" class="">Tom</span>
-          <span class="animacion-de-texto">Contacto</span>
-        </h1>
-      </div>
-
-      <!-- ABOUT / SOBRE MI -->
-
-      <div id="sobreMi" class="seccion">
-        <div id="aboutCard">
-          <h2 id="titleAbout">Sobre mi</h2>
-          <p id="aboutText">
-            Me llamo Tomás, mis amigos me dicen Tom, no tendré amigos muy
-            creativos pero yo trato de serlo y mejorarlo día a día.
-            <br />
-            Me gusta enseñar, doy clases particulares de matemática, química y
-            programación a ingresantes de carreras universitarias y nivel
-            secundario.
-            <br />
-            Soy una persona emprendedora y autodidacta. Actualmente me estoy
-            especializando en el desarrollo Backend, aunque estoy siempre
-            dispuesto a aprender y adaptarme a nuevas áreas de trabajo y
-            tecnologías.
-          </p>
-        </div>
-
-        <!-- Experiencia -->
-        <div class="container">
-          <div class="wrapper">
-            <div class="steps" id="steps"></div>
-          </div>
-          <script src="assets/JS/timeLineObjet.js"></script>
-        </div>
-
-        <h3 class="volver-btn" onclick="volverAlInicio()">X</h3>
-      </div>
-
-      <!-- PROYECTOS -->
-
-      <div id="proyectos" class="seccion">
-        <div id="projects"></div>
-        <script src="assets/JS/projectsObjet.js"></script>
-
-        <h3 class="volver-btn" onclick="volverAlInicio()">X</h3>
-      </div>
-
-      <!-- CONTACTO -->
-
-    <div id="contacto" class="seccion formContainer">
-
-        <div class="redes-sociales-container">
-            <h1>Contacto</h1>
-            <div class="redes-sociales">
-                <a href="" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="" target="_blank"><i class="fab fa-github"></i></a>
-                <a href=""><i class="far fa-envelope"></i></a>
-            </div>
-        </div>
-        
-            <div class="custom-form-container">
-                <div class="card">
-                    <h2>Contact Us</h2>
-                    <div class="row">
-                        <div class="col">
-                            <div class="form-group">
-                                <label for="firstName">First Name</label>
-                                <input type="text" id="firstName" name="firstName" required />
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="form-group">
-                                <label for="surname">Surname</label>
-                                <input type="text" id="surname" name="surname" required />
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email" required />
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="form-group">
-                                <label for="phone">Phone</label>
-                                <input type="tel" id="phone" name="phone" required />
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="form-group">
-                                <label for="message">Message</label>
-                                <input type="text" id="message" name="message" required />
-                            </div>
-                        </div>
-                        <div class="col">
-                            <input type="submit" value="Submit" />
-                        </div>
-                    </div>
-                </div>
-        
-            <h3 class="volver-btn" onclick="volverAlInicio()">X</h3>
-        </div>
-
-
-      <script src="./assets/JS/popupfb.js"></script>
-      <script src="./assets/JS/btn-traductor.js"></script>
-      <button onclick="topFunction()" id="topBtn" title="Go to top">
-        Volver
-      </button>
-      <script src="assets/JS/scrollFuntion.js"></script>
+      <h1>
+        <span id="contactoBtn" class="">Tom</span>
+        <span class="animacion-de-texto">Contacto</span>
+      </h1>
     </div>
-  </body>
+
+    <!-- ABOUT / SOBRE MI -->
+    <div id="sobreMi" class="seccion">
+      <div id="aboutCard">
+        <h2 id="titleAbout">Sobre mi</h2>
+        <p id="aboutText">
+          Me llamo Tomás, mis amigos me dicen Tom, no tendré amigos muy
+          creativos pero yo trato de serlo y mejorarlo día a día.
+          <br />
+          Me gusta enseñar, doy clases particulares de matemática, química y
+          programación a ingresantes de carreras universitarias y nivel
+          secundario.
+          <br />
+          Soy una persona emprendedora y autodidacta. Actualmente me estoy
+          especializando en el desarrollo Backend, aunque estoy siempre
+          dispuesto a aprender y adaptarme a nuevas áreas de trabajo y
+          tecnologías.
+        </p>
+      </div>
+
+      <!-- Experiencia -->
+      <div class="container">
+        <div class="wrapper">
+          <div class="steps" id="steps"></div>
+        </div>
+        <script src="assets/JS/timeLineObjet.js"></script>
+      </div>
+
+      <h3 class="volver-btn" onclick="volverAlInicio()">X</h3>
+    </div>
+
+    <!-- PROYECTOS -->
+    <div id="proyectos" class="seccion">
+      <div id="projects"></div>
+      <script src="assets/JS/projectsObjet.js"></script>
+
+      <h3 class="volver-btn" onclick="volverAlInicio()">X</h3>
+    </div>
+
+    <!-- CONTACTO -->
+    <div id="contacto" class="seccion formContainer">
+      <div class="redes-sociales-container">
+        <h1>Contacto</h1>
+        <div class="redes-sociales">
+          <a href="https://www.linkedin.com/in/tomas-peruilh-55bb75259/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/not-tomi" target="_blank"><i class="fab fa-github"></i></a>
+          <a href=""><i class="far fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="custom-form-container">
+        <div class="card">
+          <h2>Contact Us</h2>
+          <div class="row">
+            <div class="col">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required />
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <label for="surname">Surname</label>
+                <input type="text" id="surname" name="surname" required />
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" required />
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <label for="message">Message</label>
+                <input type="text" id="message" name="message" required />
+              </div>
+            </div>
+            <div class="col">
+              <input type="submit" value="Submit" />
+            </div>
+          </div>
+        </div>
+        <h3 class="volver-btn" onclick="volverAlInicio()">X</h3>
+      </div>
+    </div>
+
+    <script src="./assets/JS/popupfb.js"></script>
+    <script src="./assets/JS/btn-traductor.js"></script>
+    <button onclick="topFunction()" id="topBtn" title="Go to top">
+      Volver
+    </button>
+    <script src="assets/JS/scrollFuntion.js"></script>
+  </div>
+</body>
 </html>
