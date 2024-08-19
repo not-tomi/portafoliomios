@@ -1,6 +1,6 @@
 # portafoliomios
 
-Me propuse crear un portfolio 100% vanilla, creando en js yo mismo los componentes para entender mejor como funcionan.
+## Me propuse crear un portfolio 100% vanilla, creando en js yo mismo los componentes para entender mejor como funcionan.
 Ej
 ![image](https://github.com/user-attachments/assets/c926c5e3-6251-4f82-a248-a3a38ef59d13)
 
